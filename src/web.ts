@@ -1,5 +1,5 @@
 import { WebPlugin } from '@capacitor/core';
-import * as  $script from 'scriptjs';
+import includeWebAssets from 'include-web-assets';
 
 import type { SignInWithAppleOptions, SignInWithApplePlugin, SignInWithAppleResponse, } from './definitions';
 
@@ -70,7 +70,11 @@ export class SignInWithAppleWeb
         return new Promise(resolve => {
             if (!this.isAppleScriptLoaded) {
                 if (typeof window !== undefined) {
-                    $script.get(this.appleScriptUrl, () => resolve(true));
+                    // $script.get(this.appleScriptUrl, () => resolve(true));
+                    includeWebAssets({
+                        type: 'text/javascript',
+                        src: this.appleScriptUrl
+                    }).then(() => resolve(true));
                 } else {
                     resolve(false);
                 }

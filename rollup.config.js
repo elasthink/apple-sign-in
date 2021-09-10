@@ -1,3 +1,5 @@
+import nodeResolve from "@rollup/plugin-node-resolve";
+
 export default {
   input: 'dist/esm/index.js',
   output: [
@@ -6,8 +8,7 @@ export default {
       format: 'iife',
       name: 'SignInWithApple',
       globals: {
-        '@capacitor/core': 'capacitorExports',
-        'scriptjs': 'scriptjs'
+        '@capacitor/core': 'capacitorExports'
       },
       sourcemap: true,
       inlineDynamicImports: true,
@@ -19,5 +20,6 @@ export default {
       inlineDynamicImports: true,
     },
   ],
+  plugins: [ nodeResolve() ],
   external: ['@capacitor/core'],
 };
