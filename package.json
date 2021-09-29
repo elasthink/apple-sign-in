@@ -19,7 +19,7 @@
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build",
-    "preinstall": "npm run clean && tsc && rollup -c rollup.config.js",
+    "prepack": "npm run clean && tsc && rollup -c rollup.config.js",
     "release": "np --any-branch"
   },
   "author": "Max Lynch <max@ionic.io>",
