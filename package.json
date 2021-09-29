@@ -28,7 +28,7 @@
   "dependencies": {
     "@capacitor/core": "^3.0.2",
     "@types/scriptjs": "0.0.2",
-    "include-web-assets": "file:../include-web-assets"
+    "include-web-assets": "github:elasthink/include-web-assets"
   },
   "devDependencies": {
     "@capacitor/android": "^3.0.2",
