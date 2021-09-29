@@ -19,6 +19,7 @@
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build",
+    "preinstall": "npm run build",
     "release": "np --any-branch"
   },
   "author": "Max Lynch <max@ionic.io>",
