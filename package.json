@@ -19,6 +19,7 @@
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build",
+    "prepare": "npm run build",
     "release": "np --any-branch --yolo"
   },
   "author": "Max Lynch <max@ionic.io>",
@@ -26,16 +27,14 @@
   "swiftlint": "@ionic/swiftlint-config",
   "license": "MIT",
   "dependencies": {
-    "@types/scriptjs": "0.0.2",
-    "include-web-assets": "github:elasthink/include-web-assets",
-    "scriptjs": "^2.5.9"
+    "include-web-assets": "github:elasthink/include-web-assets"
   },
   "devDependencies": {
-    "@capacitor/android": "^4.1.0",
-    "@capacitor/cli": "^4.1.0",
-    "@capacitor/core": "^4.1.0",
-    "@capacitor/docgen": "0.0.17",
-    "@capacitor/ios": "^4.1.0",
+    "@capacitor/android": "^4.3.0",
+    "@capacitor/cli": "^4.3.0",
+    "@capacitor/core": "^4.3.0",
+    "@capacitor/docgen": "^0.2.0",
+    "@capacitor/ios": "^4.3.0",
     "@ionic/eslint-config": "^0.3.0",
     "@ionic/prettier-config": "^1.0.1",
     "@ionic/swiftlint-config": "^1.1.2",
