@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [6.0.1](https://github.com/capacitor-community/apple-sign-in/compare/v6.0.0...v6.0.1) (2024-07-10)
+
 ## [6.0.0](https://github.com/capacitor-community/apple-sign-in/compare/v5.0.0...v6.0.0) (2024-04-26)
 
 
