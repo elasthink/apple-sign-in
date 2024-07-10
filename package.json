@@ -1,6 +1,6 @@
 {
   "name": "@capacitor-community/apple-sign-in",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "description": "Capacitor Sign in with Apple",
   "main": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -20,7 +20,7 @@
     "watch": "tsc --watch",
     "prepare": "npm run build",
     "prepublishOnly": "npm run build",
-    "release": "np --any-branch --yolo"
+    "release": "commit-and-tag-version"
   },
   "author": "Max Lynch <max@ionic.io>",
   "prettier": "@ionic/prettier-config",
@@ -30,16 +30,16 @@
     "include-web-assets": "github:elasthink/include-web-assets"
   },
   "devDependencies": {
-    "@capacitor/android": "^5.0.0",
-    "@capacitor/cli": "^5.0.0",
-    "@capacitor/core": "^5.0.0",
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/cli": "^6.0.0",
+    "@capacitor/core": "^6.0.0",
     "@capacitor/docgen": "0.0.17",
-    "@capacitor/ios": "^5.0.0",
+    "@capacitor/ios": "^6.0.0",
     "@ionic/eslint-config": "^0.3.0",
     "@ionic/prettier-config": "^1.0.1",
     "@ionic/swiftlint-config": "^1.1.2",
+    "commit-and-tag-version": "^12.4.0",
     "eslint": "^7.11.0",
-    "np": "^7.4.0",
     "prettier": "~2.3.0",
     "prettier-plugin-java": "~1.0.2",
     "rimraf": "^3.0.2",
@@ -48,7 +48,7 @@
     "typescript": "~4.0.3"
   },
   "peerDependencies": {
-    "@capacitor/core": "^5.0.0"
+    "@capacitor/core": "^6.0.0"
   },
   "eslintConfig": {
     "extends": "@ionic/eslint-config/recommended"
